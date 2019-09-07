@@ -50,6 +50,15 @@ ofertas
 categorias
 top 20
 
+Manuel
+	header 
+	categorias
+	login
+Carlos
+	carrusel 
+	footer
+	registro
+
 
 	
 
