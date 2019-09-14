@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        background-color: #ddd;
+    }
+    .imagenes-img{
+        width: 800px;
+    }
+    .carousel, ul{
+        height: 600px;
+    }
+    .carousel{
+        position:relative;
+        width:800px;
+        height: 500px;
+        margin:0 auto;
+        overflow:hidden;
+        margin-top:100px;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+    }  
+
+    .carousel li {
+        display: inline-block;
+        float: left;
+        position: relative;
+        width:800px;
+        height: 600px;
+    }
+
+    .carousel ul{
+        position:absolute;
+        left:0px;
+        margin-left:-50px;
+        width:5000px;
+        top:-15px;
+        list-style: none;
+        transition:left 0.3s linear;
+    }
+    .carousel-container{
+        margin:0px auto;
+        padding 0px;
+        width:800px;
+        float:left;
+
+    }
+    .carousel-container img{
+        width:100%;
+        padding:0 10px;
+    }
+    .carousel li{
+        animation:slide-animation 15s infinite;
+    }
+
+    .carousel ul:hover{
+        animation-play-state: paused;
+    }
+
+    @keyframes slide-animation{
+        20%{left:0}
+        25%{left:-800px}
+        45%{left:-800px}
+        50%{left:-1600px}
+        70%{left:-1600px}
+        75%{left:-2400px}
+        98%{left:-2400px}
+        100%{left:0px} 
+
+    }
+</style>
+
+<body>
+    <div class="carousel">
+        
+            <ul>
+                <div class="carousel-container">
+                    <li>
+                        <img class="imagenes-img" src="./fotos/foto1.jpg">
+                    </li>
+                </div>
+                <div class="carousel-container">
+                    <li>
+                        <img class="imagenes-img" src="./fotos/foto2.jpg">
+                    </li>
+                </div>
+                <div class="carousel-container">
+                    <li>
+                        <img class="imagenes-img" src="./fotos/foto4.jpg">
+                    </li>
+                </div>
+                <div class="carousel-container">
+                    <li>
+                        <img class="imagenes-img" src="./fotos/foto5.jpg">
+                    </li>
+                </div>
+                <div class="carousel-container">
+                    <li>
+                        <img class="imagenes-img" src="./fotos/foto6.jpg">
+                    </li>
+                </div>
+            </ul>
+    </div>
+
+
+
+
+</body>
+
+</html>
